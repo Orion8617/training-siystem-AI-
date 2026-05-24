@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(222 47% 11%);
+  --color-foreground: hsl(210 40% 98%);
+  --color-card: hsl(222 47% 13%);
+  --color-card-foreground: hsl(210 40% 98%);
+  --color-border: hsl(217 33% 20%);
+  --color-muted: hsl(217 33% 17%);
+  --color-muted-foreground: hsl(215 20% 65%);
+  --color-primary: hsl(221 83% 53%);
+  --color-primary-foreground: hsl(210 40% 98%);
+  --color-secondary: hsl(217 33% 17%);
+  --color-secondary-foreground: hsl(210 40% 98%);
+  --color-destructive: hsl(0 63% 31%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-chart-1: hsl(221 83% 53%);
+  --color-chart-2: hsl(142 72% 45%);
+  --color-chart-3: hsl(45 93% 47%);
+  --color-chart-4: hsl(280 65% 60%);
+  --color-chart-5: hsl(0 72% 51%);
+}
+
+:root {
+  --foreground: 210 40% 98%;
+  --background: 222 47% 11%;
+  --card: 222 47% 13%;
+  --card-foreground: 210 40% 98%;
+  --border: 217 33% 20%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --chart-1: 221 83% 53%;
+  --chart-2: 142 72% 45%;
+  --chart-3: 45 93% 47%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 0 72% 51%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 1rem;
+}
